@@ -4,6 +4,12 @@ namespace CSharp9
 {
     public class Class1
     {
-        public bool Test(int input) => input is 1 or 2;
+        public static void Main()
+        {
+            foreach (var x in new[] { 1, 4, 3, 2 })
+            {
+                Console.WriteLine(x is 2 or 5);
+            }
+        }
     }
 }
